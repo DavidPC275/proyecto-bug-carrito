@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Versión con Bug</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 Mi Carrito de Compras</h1>
+        
+        <div class="producto">
+            <span>📱 Smartphone X</span>
+            <span class="precio">$499</span>
+            <button class="btn-eliminar" data-producto="smartphone">Eliminar</button>
+        </div>
+        
+        <div class="producto">
+            <span>🎧 Auriculares Bluetooth</span>
+            <span class="precio">$89</span>
+            <button class="btn-eliminar" data-producto="auriculares">Eliminar</button>
+        </div>
+        
+        <div class="producto">
+            <span>⌚ Reloj Inteligente</span>
+            <span class="precio">$199</span>
+            <button class="btn-eliminar" data-producto="reloj">Eliminar</button>
+        </div>
+        
+        <div class="cupon-section">
+            <input type="text" id="cupon-input" placeholder="Código de cupón">
+            <button id="btn-aplicar-cupon">Aplicar cupón</button>
+        </div>
+        
+        <div class="total">
+            <strong>Total: $<span id="total">787</span></strong>
+        </div>
+        
+        <div id="mensaje-cupon"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
